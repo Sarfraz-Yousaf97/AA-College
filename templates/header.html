@@ -1,0 +1,161 @@
+{% load static %}
+<header class="header">
+    <!-- Main Navbar-->
+    
+  
+
+    <nav class=" navbar navbar-expand-lg 
+    {% if request.path == '/' %}
+    bg-dark-nav
+    {% else %}
+    bg-light
+    {% endif %}
+    "
+    
+    >
+    <!-- fixed-navbar -->
+      
+        
+      <div class="container">
+        <!-- Navbar Brand -->
+        <div class="navbar-header navbar_dark d-flex align-items-center justify-content-between">
+          <!-- Navbar Brand --><a href="{% url 'landing' %}" class="navbar-brand text-white"><img src="{% static 'assets/image/aa_logo.png' %}" alt="" style="width:350px ; height:80px; margin-left: -50px;"></a>
+          <!-- Toggle Button-->
+          <button type="button" data-toggle="collapse" data-target="#navbarcollapse" aria-controls="navbarcollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span></span><span></span><span></span></button>
+        </div>
+        <!-- Navbar Menu -->
+        <div id="navbarcollapse" class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            
+            <li class="nav-item " >
+              <a href="{% url 'landing' %}" class="nav-link  display-6 text-uppercase  
+              {% if request.path == '/' %}
+              text-home-light
+              btm_border
+              {% else %}
+              text-home-dark
+              no-btm_border
+              {% endif %}
+              ">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="{% url 'about_us' %}" class="">
+                <div class="dropdown">
+                  <div class="dropbtn btn mt-1  text-uppercase dropdown-toggle
+                  {% if request.path == '/' %}
+                  text-home-light
+                  nav-link-hover
+                  {% elif request.path == '/about_us/' %}
+                  btm_border
+                  nav-link-hover
+                  text-home-dark
+                  {% else %}
+                  text-home-dark
+                  nav-link-hover
+                  {% endif %}
+                  "
+                  >About Us  </div>
+                  <div class="dropdown-content">
+                    <a href="#">Chairman Meassage's</a>
+                    <a href="#">Our Famioly Strength</a>
+                    <a href="#">Our Instructor Portfolio</a>
+                    <a href="#">Our Studenet Reviews</a>
+                    <a href="#">Our Student Our Pride </a>
+                    <a href="#">Student Tours</a>
+                    <a href="#">Fee Package</a>
+                    <a href="#">Get Register With Us</a>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{% url 'courses' %}">
+                <div class="dropdown">
+                  <div class="dropbtn btn mt-1 text-uppercase dropdown-toggle 
+                  {% if request.path == '/' %}
+                  text-home-light
+                  nav-link-hover
+                  {% elif request.path == '/courses/' %}
+                  btm_border
+                  text-home-dark
+                  nav-link-hover
+                  
+                  {% else %}
+                  text-home-dark
+                  nav-link-hover
+                  {% endif %}
+                  ">Courses  </div>
+                  <div class="dropdown-content">
+                    <a href="#">Freelancing Courses</a>
+                    <a href="#">Advanced Courses</a>
+                    <a href="#">E-Commerece Courses</a>
+                    <a href="#">Mass Media Courses</a>
+                    <a href="#">Pure Femme Courses</a>
+                    <a href="#">Art & Design Courses</a>
+                    <a href="#">Quran Learning Courese</a>
+                    <a href="#">Online Bussiness Courses</a>
+                    <a href="#">Rapid Freelancing Courses</a>
+                    <a href="#">Matric & Inter Courses</a>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              
+              <a href="{% url 'promotions' %}" class="nav-link nav-link-hover display-6  text-uppercase 
+              {% if request.path == '/' %}
+                  text-home-light 
+                  {% elif request.path == '/promotions/' %}
+                  btm_border
+                  text-home-dark
+                  
+                  {% else %}
+                  text-home-dark
+                  {% endif %}
+                  ">Promotions</a>
+              
+            </li>
+            <li class="nav-item">
+              <a class="display-6" href="{% url 'hostelservice' %}">
+                <div class="dropdown">
+                  <div class="dropdown-toggle dropbtn btn mt-1 text-uppercase 
+                  {% if request.path == '/' %}
+                  text-home-light
+                  nav-link-hover
+                  {% elif request.path == '/hostelservice/' %}
+                  btm_border
+                  text-home-dark
+                  nav-link-hover
+                  text-primary
+                  {% else %}
+                  nav-link-hover
+                  text-home-dark
+                  {% endif %}
+                  ">
+                    Hostel Serviece 
+                </div>
+                  <div class="dropdown-content">
+                    <a href="#">Rules & Ragulations</a>
+                    <a href="#">Hostel Gallery</a>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li class="nav-item mb-2"><a href="{% url 'contactus' %}" class="nav-link nav-link-hover display-6 text-uppercase {% if request.path == '/' %}
+              text-home-light
+              {% elif request.path == '/contactus/' %}
+              btm_border
+              text-home-dark
+              text-primary
+              {% else %}
+              text-home-dark
+              {% endif %}
+              ">contact us</a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+

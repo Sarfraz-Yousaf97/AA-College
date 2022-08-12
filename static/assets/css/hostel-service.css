@@ -1,0 +1,31 @@
+
+.main-para-hostel{
+    margin-top: 80px;
+}
+
+.heading-hostel{
+    font-size: 45px;
+    color: #3C424F;
+}
+.hostel-para-font{
+    color: #6B7C93;
+    font-size: 1.1em;
+}
+.list-hostel-items li{
+    color: #6B7C93;
+    font-size: 1.1em;
+}
+.list-hostel-anchor{
+    color:#03A9F4;
+    
+}
+.list-hostel-anchor:hover{
+    border: none;
+    color:#86c5e5;
+}
+
+.contact-para-font{
+    margin-top: 110px;
+    color: #6B7C93;
+    font-size: 1.1em;
+}

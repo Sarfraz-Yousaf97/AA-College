@@ -1,0 +1,33 @@
+/* .main-about_us{
+    overflow-x: none;
+} */
+
+
+.showcase-about_us {
+    height: 35vh;
+  }
+.text-showcase{
+    margin: -150px;
+  }
+  .div-color-dark{
+    margin-top: 168px;
+    background-color: #808080;
+    height: 145px;
+  }
+  .div-color-dark p{
+    font-size: 20px;
+  }
+  .para-text-first{
+    margin-top:120px ;
+  }
+  .about-para-font{
+    /* line-height: 1.8em; */
+    font-size: 21px;
+    color: #6B7C93;
+  }
+  .vission-about_us h1{
+    color: #3C424F;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: 350px;
+  }

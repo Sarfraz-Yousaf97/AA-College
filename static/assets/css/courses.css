@@ -1,0 +1,33 @@
+.post-image-first{
+    width: 250px;
+
+    height: 230px;
+}
+.span-post{
+    font-size:0.9em;
+    color: #8e9dae;
+
+}
+.heading-post{
+    color: #3C424F;
+    font-size: 25px;
+}
+.admin-prom-anchor{
+    color:#8e9dae;
+    border-bottom: 1px solid #8e9dae;
+}
+.admin-prom-anchor:hover{
+    color:#2a2e37;
+    border: none;
+}
+.post-paragrapg-text{
+    color: #6B7C93;
+    line-height: 1.5em;
+}
+.read-post-anchor{
+    color:#03A9F4;
+    border-bottom: 1px solid #03A9F4;
+}
+.read-post-anchor:hover{
+    border: none;
+}

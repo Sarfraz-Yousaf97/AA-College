@@ -1,0 +1,15 @@
+.card-title-heading{
+    font-size: 20px;
+    color: #3C424F;
+}
+.list-side-nav{
+    list-style-type: none;
+}
+.list-side-anchor{
+    color:#03A9F4;
+    
+}
+.list-side-anchor:hover{
+    border: none;
+    color:#86c5e5;
+}

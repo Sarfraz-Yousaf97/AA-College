@@ -1,0 +1,17 @@
+.showcase-image-unique img{
+        height: 350px;
+        width: 100%;
+}
+.showcase-title-unique{
+    position: absolute;
+    margin-top: -220px;
+    margin-left: 450px;
+    margin-bottom: 100px;
+
+}
+.showcase-text-unique{
+    font-size: 1.4em;
+    position: absolute;
+    margin-top: -130px;
+    margin-left: 500px;
+}

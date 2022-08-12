@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+{% include "showcase-image.html" %}
+<main>
+    <section>
+        <div class="container">
+            <div class="content text-center">
+                <div class="contact-para-font"> 
+                    <p style="font-size:25px;" class="text-dark" >You May Find Us At</p>
+                    <span>53 – C, Infront Street of Badar Bakery, Near Madni Mosque, Gulberg Colony, Faisalabad, Pakistan.</span> <br>
+                    <span>Telephone: +92 (41) 2644033</span> <br>
+                    <span>Mobile: +92 321 6615002</span> <br>
+                    <span>Fax:  +92 321 6615002</span> <br>
+                    <span>Email: <a class="list-hostel-anchor" href="#">aacollegephotpshop@gmail.vom</a> </span> <br>
+                </div>
+                <div class="map-contact mt-4">
+                        <img src="{% static 'assets/image/map.png' %}" style="width: 100%;" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+{% include "fotter.html" %}
+
+{% endblock content %} 
